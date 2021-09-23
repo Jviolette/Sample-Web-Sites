@@ -1,0 +1,268 @@
+/*whole site*/
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.logo {
+    color: var(--logo-color);
+    font-size: 48px;
+    
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+p {
+    color: var(--text-color) ;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+:root {
+    --text-color: #3c5a14;
+    --logo-color: #11270b;
+    --acc-color: #71b340;
+}
+
+/*button*/
+
+.common-btn {
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 30px;
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 550;
+    transition: .5s;
+}
+
+.common-btn:hover {
+    background-color: var(--acc-color);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.4)
+}
+
+.common-btn a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/*header*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--acc-color);
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+}
+.navbar a{
+    text-decoration: none;
+    color:var(--text-color);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 25px;
+}
+
+.navbar a:hover {
+    cursor: pointer;
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--acc-color);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    }
+    
+.navbar ul li:hover::after {
+    width: 70%;
+    }
+
+
+/*showcase*/
+
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.showcase-right img  {
+    width: 475px;
+    margin: 30px 0px;
+    border-radius: 10px;
+}
+
+.showcase-left {
+    margin-top:70px
+}
+
+
+/*services*/
+
+#services{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0
+    
+}
+
+#services img {
+    width: 450px;
+    border-radius: 10px;
+}
+
+.services-right-col{
+    margin-right: 90px;
+}
+
+.services-right-col ul{
+    list-style: none;
+    padding: 10px 0;
+}
+.services-right-col li{
+    text-decoration: none;
+    color:var(--text-color);
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/*about*/
+
+#about{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+#about img{
+    width: 450px;
+    border-radius: 10px;
+}
+
+/*contact*/
+
+#contact{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+#contact img{
+    width: 450px;
+    border-radius: 10px;
+}
+
+.contact-right-col {
+    padding-top:100px
+}
+
+
+
+/*contact card*/
+
+
+.card {
+    box-shadow: 0 3px 10px rgba(0,0,0, .5);
+    padding:20px;
+    border-radius: 10px;
+    margin-right: 250px;
+}
+
+.contact-form .form-control {
+    margin: 15px 0;
+}
+
+.contact-form input[type='text']
+{
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 30%;
+    padding: 3px;
+    font-size: 14px;
+}
+
+.btn-form {
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 15px;
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 550;
+    transition: .5s;
+}
+
+.btn-form:hover {
+    background-color: var(--acc-color);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.4)
+}
+
+.btn-form a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/*hours*/
+
+#hours {
+    text-align: center;
+    padding-top: 100px; 
+}
+
+.hours-box h2 {
+    font-size: 30px
+}
+
+.hours-box {
+    background-color:var(--acc-color);
+    width: 40%;
+    margin: auto;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: white;
+    transition: .3s;
+}
+
+.hours-box:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.4)
+    }
+
+#hours ul{
+    list-style: none;
+    padding: 10px 0;
+}
+#hours li{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+/*footer*/
+
+footer {
+   padding: 60px 0;
+}
+
+
