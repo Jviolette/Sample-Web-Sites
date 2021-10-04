@@ -1,0 +1,159 @@
+/*Whole Site*/
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Lato', sans-serif;
+}
+
+.small-container{
+    max-width: 70%;
+    margin: auto;
+}
+
+.container {
+    max-width: 70%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+img {
+    max-width: 500px;
+}
+
+section {
+    padding:60px 0 20px 0;
+}
+
+.logo {
+    font-size: 52px;
+    color:var(--pop-color);
+}
+
+p {
+    font-size:24px;
+    
+}
+
+h2 {
+    font-size: 36px;
+    color: var(--main-color);
+}
+
+.btn {
+    padding:10px 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: var(--pop-color);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--pop-color);
+    transition: .5s;
+    color: var(--main-color);
+}
+
+:root{
+    --main-color:#1b998b;
+    --pop-color:#64113f;
+}
+
+
+/*navbar*/
+
+header {
+    background-image:url(images/paint\ background\ 1.jpg);
+    background-position: center;
+    padding:30px 0;
+}
+
+.logo-number {
+    color: var(--pop-color);
+}
+
+.logo-bar {
+    text-align: center;
+}
+
+.head-content {
+    padding-top:80px;
+}
+
+.head-content h2 {
+    padding-bottom: 20px;
+}
+
+
+/*services*/
+
+.col-services {
+    flex-basis: 40%;
+    min-width: 300px;
+}
+
+.services-content h2 {
+    padding-bottom: 20px;
+}
+
+.col-services img {
+    border-radius: 10px;
+    max-width: 99%;
+    
+}
+
+/*contact*/
+
+.col-contact {
+    flex-basis: 40%;
+    min-width: 300px;
+}
+
+.contact-content h2 {
+    padding-bottom: 20px;
+}
+
+.contact-content {
+    margin-bottom: 100px;
+}
+
+.contact-form {
+    margin-right: 490px;
+}
+
+.contact-form {
+    box-shadow: 0 3px 10px rgba(0,0,0, .5);
+    padding:30px;
+    border-radius: 10px;
+    min-width: 99%
+}
+
+.contact-form h4 {
+    font-size: 24px;
+    color: var(--main-color);
+}
+
+
+ .form-control {
+    margin: 15px 0;
+}
+
+.contact-form input[type='text']
+{
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 3px;
+    font-size: 14px;
+}
+
+
+
